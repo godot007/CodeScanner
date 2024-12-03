@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13096443B229103DB34B0858 /* Pods_CodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6351366EE929E800E2B547B /* Pods_CodeScanner.framework */; };
+		686784782CFD5ED300D3CF9A /* WechatQrcodeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686784772CFD5ED300D3CF9A /* WechatQrcodeDetector.swift */; };
+		6867847D2CFD64C600D3CF9A /* sr.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 686784792CFD64C600D3CF9A /* sr.caffemodel */; };
+		6867847E2CFD64C600D3CF9A /* detect.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 6867847A2CFD64C600D3CF9A /* detect.caffemodel */; };
+		6867847F2CFD64C600D3CF9A /* sr.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 6867847B2CFD64C600D3CF9A /* sr.prototxt */; };
+		686784802CFD64C600D3CF9A /* detect.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 6867847C2CFD64C600D3CF9A /* detect.prototxt */; };
+		686784842CFD89F500D3CF9A /* HmsScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686784832CFD89F500D3CF9A /* HmsScannerViewController.swift */; };
+		687F80FC2CF8522A00F63048 /* CameraSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687F80FB2CF8522A00F63048 /* CameraSession.swift */; };
+		687F81002CF85C4600F63048 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687F80FF2CF85C4600F63048 /* CameraPreview.swift */; };
+		687F81042CF95D7F00F63048 /* WechatQrcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687F81032CF95D7F00F63048 /* WechatQrcodeViewController.swift */; };
+		68F6B03A2CF80E270040EED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F6B0392CF80E270040EED3 /* AppDelegate.swift */; };
+		68F6B03C2CF80E270040EED3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F6B03B2CF80E270040EED3 /* SceneDelegate.swift */; };
+		68F6B03E2CF80E270040EED3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F6B03D2CF80E270040EED3 /* ViewController.swift */; };
+		68F6B0412CF80E270040EED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F6B03F2CF80E270040EED3 /* Main.storyboard */; };
+		68F6B0432CF80E2A0040EED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F6B0422CF80E2A0040EED3 /* Assets.xcassets */; };
+		68F6B0462CF80E2A0040EED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F6B0442CF80E2A0040EED3 /* LaunchScreen.storyboard */; };
+		68F6B0502CF8105A0040EED3 /* MetadataOutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F6B04F2CF8105A0040EED3 /* MetadataOutputViewController.swift */; };
+		B0ADC6962CFF209E0063BA52 /* opencv2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0ADC6952CFF209E0063BA52 /* opencv2.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0DF00632CFF4AEB000BE649 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5684FBB785947A980B955948 /* Pods-CodeScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeScanner.release.xcconfig"; path = "Target Support Files/Pods-CodeScanner/Pods-CodeScanner.release.xcconfig"; sourceTree = "<group>"; };
+		686784772CFD5ED300D3CF9A /* WechatQrcodeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatQrcodeDetector.swift; sourceTree = "<group>"; };
+		686784792CFD64C600D3CF9A /* sr.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = sr.caffemodel; sourceTree = "<group>"; };
+		6867847A2CFD64C600D3CF9A /* detect.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = detect.caffemodel; sourceTree = "<group>"; };
+		6867847B2CFD64C600D3CF9A /* sr.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sr.prototxt; sourceTree = "<group>"; };
+		6867847C2CFD64C600D3CF9A /* detect.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = detect.prototxt; sourceTree = "<group>"; };
+		686784832CFD89F500D3CF9A /* HmsScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmsScannerViewController.swift; sourceTree = "<group>"; };
+		687F80FB2CF8522A00F63048 /* CameraSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSession.swift; sourceTree = "<group>"; };
+		687F80FF2CF85C4600F63048 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		687F81032CF95D7F00F63048 /* WechatQrcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatQrcodeViewController.swift; sourceTree = "<group>"; };
+		68F6B0362CF80E270040EED3 /* CodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F6B0392CF80E270040EED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68F6B03B2CF80E270040EED3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		68F6B03D2CF80E270040EED3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68F6B0402CF80E270040EED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68F6B0422CF80E2A0040EED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68F6B0452CF80E2A0040EED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68F6B0472CF80E2A0040EED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68F6B04F2CF8105A0040EED3 /* MetadataOutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataOutputViewController.swift; sourceTree = "<group>"; };
+		90D4A019C404D13FE2674245 /* Pods-CodeScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeScanner.debug.xcconfig"; path = "Target Support Files/Pods-CodeScanner/Pods-CodeScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		B0ADC6952CFF209E0063BA52 /* opencv2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = opencv2.xcframework; sourceTree = "<group>"; };
+		D6351366EE929E800E2B547B /* Pods_CodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68F6B0332CF80E270040EED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13096443B229103DB34B0858 /* Pods_CodeScanner.framework in Frameworks */,
+				B0ADC6962CFF209E0063BA52 /* opencv2.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0935F2ECEF857E2AEDA97E6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90D4A019C404D13FE2674245 /* Pods-CodeScanner.debug.xcconfig */,
+				5684FBB785947A980B955948 /* Pods-CodeScanner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4E0DFD25B0A5BDE416D95CD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6351366EE929E800E2B547B /* Pods_CodeScanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		687F80F72CF84F9000F63048 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		687F80FA2CF8521000F63048 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				687F80FB2CF8522A00F63048 /* CameraSession.swift */,
+				687F80FF2CF85C4600F63048 /* CameraPreview.swift */,
+				686784772CFD5ED300D3CF9A /* WechatQrcodeDetector.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		687F81052CF95D8900F63048 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0ADC6952CFF209E0063BA52 /* opencv2.xcframework */,
+				6867847A2CFD64C600D3CF9A /* detect.caffemodel */,
+				6867847C2CFD64C600D3CF9A /* detect.prototxt */,
+				686784792CFD64C600D3CF9A /* sr.caffemodel */,
+				6867847B2CFD64C600D3CF9A /* sr.prototxt */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		68F6B02D2CF80E270040EED3 = {
+			isa = PBXGroup;
+			children = (
+				68F6B0382CF80E270040EED3 /* CodeScanner */,
+				68F6B0372CF80E270040EED3 /* Products */,
+				0935F2ECEF857E2AEDA97E6D /* Pods */,
+				4E0DFD25B0A5BDE416D95CD9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68F6B0372CF80E270040EED3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68F6B0362CF80E270040EED3 /* CodeScanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68F6B0382CF80E270040EED3 /* CodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				687F81052CF95D8900F63048 /* resources */,
+				687F80FA2CF8521000F63048 /* core */,
+				687F80F72CF84F9000F63048 /* views */,
+				68F6B04E2CF810170040EED3 /* controllers */,
+				68F6B0392CF80E270040EED3 /* AppDelegate.swift */,
+				68F6B03B2CF80E270040EED3 /* SceneDelegate.swift */,
+				68F6B03D2CF80E270040EED3 /* ViewController.swift */,
+				68F6B03F2CF80E270040EED3 /* Main.storyboard */,
+				68F6B0422CF80E2A0040EED3 /* Assets.xcassets */,
+				68F6B0442CF80E2A0040EED3 /* LaunchScreen.storyboard */,
+				68F6B0472CF80E2A0040EED3 /* Info.plist */,
+			);
+			path = CodeScanner;
+			sourceTree = "<group>";
+		};
+		68F6B04E2CF810170040EED3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68F6B04F2CF8105A0040EED3 /* MetadataOutputViewController.swift */,
+				687F81032CF95D7F00F63048 /* WechatQrcodeViewController.swift */,
+				686784832CFD89F500D3CF9A /* HmsScannerViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68F6B0352CF80E270040EED3 /* CodeScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F6B04A2CF80E2A0040EED3 /* Build configuration list for PBXNativeTarget "CodeScanner" */;
+			buildPhases = (
+				854946B7B5C9A89B93334651 /* [CP] Check Pods Manifest.lock */,
+				68F6B0322CF80E270040EED3 /* Sources */,
+				68F6B0332CF80E270040EED3 /* Frameworks */,
+				68F6B0342CF80E270040EED3 /* Resources */,
+				B0DF00632CFF4AEB000BE649 /* CopyFiles */,
+				FDAF0C4C3D3F0BF93F57E191 /* [CP] Embed Pods Frameworks */,
+				0557914C69032F7FBD7ABE16 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeScanner;
+			productName = CodeScanner;
+			productReference = 68F6B0362CF80E270040EED3 /* CodeScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68F6B02E2CF80E270040EED3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					68F6B0352CF80E270040EED3 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 68F6B0312CF80E270040EED3 /* Build configuration list for PBXProject "CodeScanner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68F6B02D2CF80E270040EED3;
+			productRefGroup = 68F6B0372CF80E270040EED3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68F6B0352CF80E270040EED3 /* CodeScanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68F6B0342CF80E270040EED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686784802CFD64C600D3CF9A /* detect.prototxt in Resources */,
+				6867847F2CFD64C600D3CF9A /* sr.prototxt in Resources */,
+				6867847E2CFD64C600D3CF9A /* detect.caffemodel in Resources */,
+				68F6B0462CF80E2A0040EED3 /* LaunchScreen.storyboard in Resources */,
+				68F6B0432CF80E2A0040EED3 /* Assets.xcassets in Resources */,
+				6867847D2CFD64C600D3CF9A /* sr.caffemodel in Resources */,
+				68F6B0412CF80E270040EED3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0557914C69032F7FBD7ABE16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeScanner/Pods-CodeScanner-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeScanner/Pods-CodeScanner-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeScanner/Pods-CodeScanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		854946B7B5C9A89B93334651 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodeScanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDAF0C4C3D3F0BF93F57E191 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeScanner/Pods-CodeScanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeScanner/Pods-CodeScanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeScanner/Pods-CodeScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68F6B0322CF80E270040EED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F6B03E2CF80E270040EED3 /* ViewController.swift in Sources */,
+				686784782CFD5ED300D3CF9A /* WechatQrcodeDetector.swift in Sources */,
+				687F80FC2CF8522A00F63048 /* CameraSession.swift in Sources */,
+				686784842CFD89F500D3CF9A /* HmsScannerViewController.swift in Sources */,
+				68F6B03A2CF80E270040EED3 /* AppDelegate.swift in Sources */,
+				687F81002CF85C4600F63048 /* CameraPreview.swift in Sources */,
+				68F6B0502CF8105A0040EED3 /* MetadataOutputViewController.swift in Sources */,
+				687F81042CF95D7F00F63048 /* WechatQrcodeViewController.swift in Sources */,
+				68F6B03C2CF80E270040EED3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68F6B03F2CF80E270040EED3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68F6B0402CF80E270040EED3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68F6B0442CF80E2A0040EED3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68F6B0452CF80E2A0040EED3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68F6B0482CF80E2A0040EED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68F6B0492CF80E2A0040EED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68F6B04B2CF80E2A0040EED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D4A019C404D13FE2674245 /* Pods-CodeScanner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T6E4CX2R5W;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CodeScanner/resources",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodeScanner/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = xxx;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = roy.scan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68F6B04C2CF80E2A0040EED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5684FBB785947A980B955948 /* Pods-CodeScanner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T6E4CX2R5W;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CodeScanner/resources",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodeScanner/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = xxx;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = roy.scan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68F6B0312CF80E270040EED3 /* Build configuration list for PBXProject "CodeScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F6B0482CF80E2A0040EED3 /* Debug */,
+				68F6B0492CF80E2A0040EED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F6B04A2CF80E2A0040EED3 /* Build configuration list for PBXNativeTarget "CodeScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F6B04B2CF80E2A0040EED3 /* Debug */,
+				68F6B04C2CF80E2A0040EED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68F6B02E2CF80E270040EED3 /* Project object */;
+}
