@@ -74,8 +74,10 @@ extension CameraSession {
   func addVideoDataOutputDelegate(_ sampleBufferDelegate: AVCaptureVideoDataOutputSampleBufferDelegate?, queue sampleBufferCallbackQueue: dispatch_queue_t = DispatchQueue(label: "queue_video_buffer_data")) {
     let videoOutput = AVCaptureVideoDataOutput()
     guard captureSession.canAddOutput(videoOutput) else { return }
-        
     captureSession.addOutput(videoOutput)
+    
+    // 选择合适的输出视频格式，方便解码分析图片
+    videoOutput.videoSettings = [String(kCVPixelBufferPixelFormatTypeKey): kCVPixelFormatType_32BGRA]
     videoOutput.setSampleBufferDelegate(sampleBufferDelegate, queue: sampleBufferCallbackQueue)
   }
   
